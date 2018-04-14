@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+
+
+
+
+
+<servlet>
+   <servlet-name>HelloServlet</servlet-name>
+   <servlet-class>HelloServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>HelloServlet</servlet-name>
+   <url-pattern>/HelloServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>HelloJSP</servlet-name>
+   <servlet-class>HelloJSP</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>GeneralJSP</servlet-name>
+   <servlet-class>GeneralJSP</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+   <servlet-name>HelloJSP</servlet-name>
+   <url-pattern>/HelloJSP</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>AsxJSP</servlet-name>
+   <servlet-class>AsxJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>AsxJSP</servlet-name>
+   <url-pattern>/AsxJSP</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>GeneralJSP</servlet-name>
+   <url-pattern>/GeneralJSP</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+<servlet>
+   <servlet-name>ChooserJSP</servlet-name>
+   <servlet-class>ChooserJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ChooserJSP</servlet-name>
+   <url-pattern>/ChooserJSP</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>ChooserModeJSP</servlet-name>
+   <servlet-class>ChooserModeJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ChooserModeJSP</servlet-name>
+   <url-pattern>/ChooserModeJSP</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>ModeJSP</servlet-name>
+   <servlet-class>ModeJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ModeJSP</servlet-name>
+   <url-pattern>/ModeJSP</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>StockJSP</servlet-name>
+   <servlet-class>StockJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>StockJSP</servlet-name>
+   <url-pattern>/StockJSP</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>MyNotesJSP</servlet-name>
+   <servlet-class>MyNotesJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>MyNotesJSP</servlet-name>
+   <url-pattern>/MyNotesJSP</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+<servlet>
+   <servlet-name>ReportJSP</servlet-name>
+   <servlet-class>ReportJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ReportJSP</servlet-name>
+   <url-pattern>/ReportJSP</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>GetNoteJSP</servlet-name>
+   <servlet-class>GetNoteJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>GetNoteJSP</servlet-name>
+   <url-pattern>/GetNoteJSP</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>TodayStockJSP</servlet-name>
+   <servlet-class>TodayStockJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>TodayStockJSP</servlet-name>
+   <url-pattern>/TodayStockJSP</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>CategoryJSP</servlet-name>
+   <servlet-class>CategoryJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>CategoryJSP</servlet-name>
+   <url-pattern>/CategoryJSP</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>ChooserLookJSP</servlet-name>
+   <servlet-class>ChooserLookJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ChooserLookJSP</servlet-name>
+   <url-pattern>/ChooserLookJSP</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>NewsJSP</servlet-name>
+   <servlet-class>NewsJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>NewsJSP</servlet-name>
+   <url-pattern>/NewsJSP</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>NewsListJSP</servlet-name>
+   <servlet-class>NewsListJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>NewsListJSP</servlet-name>
+   <url-pattern>/NewsListJSP</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>WorkSheetJSP</servlet-name>
+   <servlet-class>WorkSheetJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>WorkSheetJSP</servlet-name>
+   <url-pattern>/WorkSheetJSP</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>ChooserWorkSheetJSP</servlet-name>
+   <servlet-class>ChooserWorkSheetJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ChooserWorkSheetJSP</servlet-name>
+   <url-pattern>/ChooserWorkSheetJSP</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+   <servlet-name>ChooserNoteJSP</servlet-name>
+   <servlet-class>ChooserNoteJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ChooserNoteJSP</servlet-name>
+   <url-pattern>/ChooserNoteJSP</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+<servlet>
+   <servlet-name>SpecialModeJSP</servlet-name>
+   <servlet-class>SpecialModeJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>SpecialModeJSP</servlet-name>
+   <url-pattern>/SpecialModeJSP</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>ChooserModeJSP2</servlet-name>
+   <servlet-class>ChooserModeJSP2</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ChooserModeJSP2</servlet-name>
+   <url-pattern>/ChooserModeJSP2</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>ResearchJSP</servlet-name>
+   <servlet-class>ResearchJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ResearchJSP</servlet-name>
+   <url-pattern>/ResearchJSP</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>NewsSearchJSP</servlet-name>
+   <servlet-class>NewsSearchJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>NewsSearchJSP</servlet-name>
+   <url-pattern>/NewsSearchJSP</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>RSJSP</servlet-name>
+   <servlet-class>RSJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>RSJSP</servlet-name>
+   <url-pattern>/RSJSP</url-pattern>
+   <url-pattern>/SummaryJSP</url-pattern>
+
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>ChooserModePanicJSP</servlet-name>
+   <servlet-class>ChooserModePanicJSP</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ChooserModePanicJSP</servlet-name>
+   <url-pattern>/ChooserModePanicJSP</url-pattern>
+</servlet-mapping>
+
+<!--
+<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Wildcard means whole app requires authentication</web-resource-name>
+			<url-pattern>/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>tomcat</role-name>
+		</auth-constraint>
+
+		
+	</security-constraint>
+-->
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
+
+
+
+
+
+
+
+
+	    <resource-ref>
+        <description>Rowan Connection Pooling        </description>
+
+	        <res-ref-name>
+	        jdbc/fortune
+        </res-ref-name>
+	        <res-type>
+	        javax.sql.DataSource
+	        </res-type>
+	        <res-auth>
+	        Container
+	        </res-auth>
+	    </resource-ref>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</web-app>
