@@ -166,6 +166,8 @@ String postfix20cross40="&x=27&y=10&time=8&startdate=1%2F4%2F1999&enddate=11%2F2
   		out.println("<td><font size=\"3\">"+obj.getModeUsefullNumber()  +"</td>");
       out.println("<td>  <a href=\"Research/setResearch?code="+obj.getCode()+ "\" target=\"_blank\" >"+"<font size=\"3\">"+"Charts" +"</font> </a></td>");
             out.println("<td>  <a href=\"chart9.jsp?code="+obj.getCode()+ "\" target=\"_blank\" >"+"<font size=\"3\">"+" My Charts" +"</font> </a></td>");
+            out.println("<td>  <a href=\"stockadmin\\multichart?code="+obj.getCode()+ "\" target=\"_blank\" >"+"<font size=\"3\">"+" All Charts" +"</font> </a></td>");
+
                 out.println("</tr>");
                 param=param+mycode+obj.getPureCode()+"&";
 
