@@ -45,6 +45,7 @@ $( function() {
 <p><a href = "ChooserModeJSP" ><font face="verdana" color="white" size="6">Choose daily trigger mode</font> </a>   </p>
 <p><a href = "SpecialModeJSP" ><font face="verdana" color="white" size="6">Choose monthly special mode</font> </a>   </p>
 <p><a href = "ChooserModeJSP2" ><font face="verdana" color="white" size="6">Choose date  mode</font> </a>   </p>
+<p><a href = "stockweb/stock/fav" ><font face="verdana" color="white" size="6">FAV</font> </a>   </p>
 
 
 <hr width="20%" size="8" align="left">
