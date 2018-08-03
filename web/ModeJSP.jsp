@@ -19,6 +19,10 @@
 			/*Master A StyleSheet*/
 			.OBJ-1 { border:1px solid #000000;border-radius:0; }
 		</style>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" type="text/javascript"></script>
+
 <%
 
 
@@ -144,17 +148,21 @@ postfix="&time=8&startdate=1%2F4%2F1999&enddate=8%2F12%2F2016&freq=1&compidx=aaa
 
 }
 
-
+	response.setHeader("X-FRAME-OPTIONS", "SAMEORIGIN");
 
 
 %>
 
 
-			<iframe id="ifrm_1" name="ifrm_1" src="http://bigcharts.marketwatch.com/advchart/frames/frames.asp?show=&insttype=Stock&symb=<% out.println(prefix);%><% out.println(code);%><% out.println(postfix);%>"class="OBJ-1" __AddCode="here" style="position:absolute;left:26px;top:32px;width:100%;height:100%;/*Add Style*/"></iframe>
+			<!--<iframe id="ifrm_1" name="ifrm_1" src="http://bigcharts.marketwatch.com/advchart/frames/frames.asp?show=&insttype=Stock&symb=<%= prefix+code+postfix  %>" class="OBJ-1" style="position:absolute;left:26px;top:32px;width:100%;height:100%;"></iframe>-->
 
+<!-- <link ref="import" href="http://bigcharts.marketwatch.com/advchart/frames/frames.asp?show=&insttype=Stock&symb=<%= prefix+code+postfix %>" > -->
 			<!--Postamble for Document Frame ifrm_1-->
 
 
+			<!--
+			 <object data="http://bigcharts.marketwatch.com/advchart/frames/frames.asp?show=&insttype=Stock&symb=<%= prefix+code+postfix %>"  width="600" height="400" type="text/html"></object>
+-->
 
 
 
@@ -162,14 +170,7 @@ postfix="&time=8&startdate=1%2F4%2F1999&enddate=8%2F12%2F2016&freq=1&compidx=aaa
 
 
 
-
-
-
-
-
-
-
-
+			<iframe id="ifrm_1" name="ifrm_1" src="http://localhost:8070/data/year?code=<%= code%>.AX" class="OBJ-1" style="position:absolute;left:26px;top:32px;width:90%;height:60%;"></iframe>
 
 
 
