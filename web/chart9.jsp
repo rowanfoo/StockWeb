@@ -38,7 +38,36 @@
                     chart = new  Highcharts.StockChart('container', {
 
                         rangeSelector: {
-                            selected: 4
+                            buttons: [
+
+                            {
+                                type: 'month',
+                                count: 6,
+                                text: '6m'
+                            }, {
+                                type: 'ytd',
+                                text: 'YTD'
+                            }, {
+                                type: 'year',
+                                count: 1,
+                                text: '1y'
+                            },
+                                {
+                                    type: 'year',
+                                    count: 2,
+                                    text: '2y'
+                                },
+                                {
+                                    type: 'year',
+                                    count: 3,
+                                    text: '3y'
+                                },
+
+
+                                {
+                                type: 'all',
+                                text: 'All'
+                            }]
                         },
 
 
@@ -146,7 +175,9 @@
 
 
 
-                $.getJSON("http://<%=request.getServerName() %>:<%=request.getServerPort() %>/<%=request.getContextPath() %>stockadmin/data?code=<%=request.getParameter("code") %>&date=2015-03-01", function(data) {
+                 $.getJSON("http://<%=request.getServerName() %>:<%=request.getServerPort() %>/<%=request.getContextPath() %>stockadmin/data?code=<%=request.getParameter("code") %>&date=2015-03-01", function(data) {
+
+
                     console.log('xx');
                     //         data.map(function(p) {
                     //             var ymd = p.date.split("-");
